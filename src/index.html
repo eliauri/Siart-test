@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      <!-- <picture>
+        <source srcset="img/cover.webp" type="image/webp">
+        <img loading="lazy" src="img/cover.jpg" class="image" width="300" height="300" alt="Обложка канала MaxGraph">
+      </picture> -->
+      <section class="arrivals">
+        <div class="arrivals__wrapper container">
+         <h2 class="title arrivals__title">Новые поступления</h2>
+         <div class="swiper arrivals__slider">
+           <div class="swiper-wrapper">
+             <div class="swiper-slide arrivals__card">
+             </div>
+           </div>
+         </div>
+        </div>
+      </section>
+    </main>
+    @include('partials/footer.html')
+  </div>
+</body>
+
+</html>
