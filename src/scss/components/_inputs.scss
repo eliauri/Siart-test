@@ -1,0 +1,47 @@
+.input-line {
+    width: 100%;
+
+
+}
+
+.input,
+.textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 0.75rem;
+    background: #F5F8FA;
+    color: var(--black-color);
+    padding: 1rem 0.88rem;
+    transition: all 0.3s;
+
+    &::placeholder {
+        color: #6A727B;
+    }
+
+    &:hover {
+        background: #EFF2F6;
+    }
+
+    &:focus,
+    &:target {
+        background: #F5F8FA;
+    }
+
+    @include big-desktop {
+        font-size: 0.875rem;
+    }
+
+    &.just-validate-error-field {
+        background: #FAF1F1;
+    }
+}
+
+.textarea {}
+
+.just-validate-error-label {
+    font-family: "Manrope";
+    font-size: 0.75rem;
+    color: #ED5858 !important;
+    margin-top: 0.25rem;
+}

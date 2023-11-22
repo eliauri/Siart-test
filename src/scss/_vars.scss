@@ -10,4 +10,13 @@
   // colors
   --light-color: #fff;
   --black-color: #1A1A1A;
+  --gray-colo: #6A727B;
+
+  @include big-desktop {
+    --content-width: 1184px;
+  }
+
+  @include mobile {
+    --container-offset: 20px;
+  }
 }

@@ -1,0 +1,103 @@
+.callback {
+    &__wrapper {
+        margin-top: 4.25rem;
+        padding-bottom: 4.25rem;
+    }
+
+    &__img {
+        float: left;
+    }
+
+    &__top {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.25rem;
+
+        @include tablet {
+            gap: 0.75rem;
+        }
+
+        @include small-tablet {
+            gap: 1rem;
+        }
+    }
+
+    &__title {
+        h2 {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            font-weight: 500;
+            margin: 0;
+            margin-top: 0.12rem;
+
+            @include big-desktop {
+                font-size: 1rem;
+            }
+
+            @include mobile {
+                font-size: 0.875rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+
+    &__description {
+        margin: 0;
+        margin-top: 0.25rem;
+        color: #6A727B;
+        line-height: 1.5rem;
+
+        @include big-desktop {
+            font-size: 0.875rem;
+        }
+
+        @include mobile {
+            line-height: 1.25rem;
+        }
+    }
+
+    &__form {}
+
+    &__inputs-list {
+        margin: 1.25rem 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0.75rem;
+
+        :nth-child(4) {
+            grid-column: span 3;
+
+            @include small-tablet {
+                grid-column: 1;
+            }
+        }
+
+        @include big-desktop {
+            margin: 1rem 0;
+        }
+
+        @include small-tablet {
+            grid-template-columns: 1fr;
+        }
+
+        @include mobile {
+            gap: 0.5rem;
+            margin-top: 1.75rem;
+        }
+    }
+
+    &__sumbit {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+
+    .custom-checkbox {
+        @include custom-checkbox
+    }
+
+}
