@@ -2,6 +2,16 @@
     margin-top: 4.25rem;
     padding-bottom: 4.25rem;
 
+    @include big-desktop {
+        margin-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    @include small-tablet {
+        margin-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
     &__wrapper {
         border-radius: 1.5rem;
         border: 1px solid var(--Blue, #4092F1);
