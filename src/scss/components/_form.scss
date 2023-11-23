@@ -1,7 +1,19 @@
 .callback {
+    margin-top: 4.25rem;
+    padding-bottom: 4.25rem;
+
     &__wrapper {
-        margin-top: 4.25rem;
-        padding-bottom: 4.25rem;
+        border-radius: 1.5rem;
+        border: 1px solid var(--Blue, #4092F1);
+        padding: 2rem;
+
+        @include big-desktop {
+            padding: 1.5rem;
+        }
+
+        @include tablet {
+            padding: 1rem;
+        }
     }
 
     &__img {

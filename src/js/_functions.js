@@ -7,9 +7,8 @@
 // Реализация включения скролла (не забудьте вызвать функцию)
 // import { enableScroll } from './functions/enable-scroll';
 
-// Реализация модального окна
-import GraphModal from 'graph-modal';
-const modal = new GraphModal();
+// Модальное окно
+import { modal } from "./functions/modal";
 
 // Подключение свайпера
 import Swiper, { Navigation, Pagination } from 'swiper';
@@ -107,9 +106,9 @@ const rules1 = [
   },
 
 ];
-
+import { openModal } from "./functions/modal";
 const afterForm = () => {
-  console.log('Произошла отправка, тут можно писать любые действия');
+  openModal('successfully')
 };
 
 validateForms('.callback__form', rules1, afterForm);
